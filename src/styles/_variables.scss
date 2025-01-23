@@ -1,0 +1,23 @@
+:root{
+  --blue: #1064E5;
+  --dark-blue: #061224;
+  --light-blue: #DEEEFC;
+  --light-green: #D8F1F0;
+  --black: #000000;
+
+  // текст
+  --primary-color: var(--blue);
+  --btn-color: var(--dark-blue);
+  --base-font-family: 'IBM Plex Sans';
+  --text-color: var(--dark-blue);
+  --base-font-weight: 400;
+
+  // container
+  --section-bg-color: var(--light-green);
+  --section-padding-y: 60px;
+  --container-padding-x: 15px;
+
+  // svg
+  --fillColor: currentColor;
+  --strokeColor: initial;
+}

@@ -1,0 +1,52 @@
+mixin header
+  header.header 
+    .container.header__container 
+      a.header__logo.logo(href="#" aria-label="Home page") 
+        img(src="/src/assets/img/logo.svg" alt="" title="To home page")
+      .drop-down.fone-select
+        button.drop-down__button(type="button") 
+          span.drop-down__title 0 800 750 643
+          .drop-down__svg
+            +drop-down-arrow
+        ul.drop-down__container
+          li.drop-down__item 
+            span.drop-down__text 0 800 750 643
+          li.drop-down__item 
+            span.drop-down__text +380 44 334 56 43
+          li.drop-down__item 
+            span.drop-down__text +380 44 338 86 43
+      nav.header__menu 
+        ul.header__menu-list   
+          li.header__menu-item.drop-down
+            button.drop-down__button(type="button") 
+              span.drop-down__title ПРО НАС
+              .drop-down__svg
+                +drop-down-arrow
+            ul.drop-down__container
+              li.drop-down__item 
+                a.drop-down__text(href="#") БЛОГ
+              li.drop-down__item 
+                a.drop-down__text(href="#") ВИДЕО
+              li.drop-down__item 
+                a.drop-down__text(href="#") ВОПРОСЫ
+          li.header__menu-item 
+            a.header__menu-link(href="#") ЦЕНЫ
+          li.header__menu-item 
+            a.header__menu-link(href="#") КОНТАКТЫ
+      .header__buttons
+        button.button(type="button")
+          span.button__body.button--border ВХОД
+        botton.button(type="button")
+          span.button__body РЕГИСТРАЦИЯ
+      .drop-down.lang-select
+        button.drop-down__button(type="button") 
+          span.drop-down__title РУС
+          .drop-down__svg
+            +drop-down-arrow
+        ul.drop-down__container
+          li.drop-down__item
+            a.drop-down__text(href="#") РУС
+          li.drop-down__item 
+            a.drop-down__text(href="#") УКР
+    
+    
