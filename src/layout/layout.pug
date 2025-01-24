@@ -1,4 +1,6 @@
 block variables
+include ../includes/header/header
+include ../includes/svg/svg
 
 doctype html
 html(lang="en")
@@ -10,6 +12,8 @@ html(lang="en")
       link(rel="stylesheet" href="./src/styles/main.scss")
       title=pageName  
   body
+    block header 
+      +header
     block content 
     block scripts 
       script(type="module" src="./src/js/main.js")
