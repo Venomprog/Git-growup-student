@@ -10,11 +10,11 @@ mixin header
             +drop-down-arrow
         ul.drop-down__container
           li.drop-down__item 
-            span.drop-down__text 0 800 750 643
+            a.link-element.drop-down__link(href="tel:0800750643") 0 800 750643
           li.drop-down__item 
-            span.drop-down__text +380 44 334 56 43
+            a.link-element.drop-down__link(href="tel:+380443345643") +380 44 334 56 43
           li.drop-down__item 
-            span.drop-down__text +380 44 338 86 43
+            a.link-element.drop-down__link(href="tel:+380443388643") +380 44 338 86 43 
       nav.header__menu 
         ul.header__menu-list   
           li.header__menu-item.drop-down
@@ -24,15 +24,15 @@ mixin header
                 +drop-down-arrow
             ul.drop-down__container
               li.drop-down__item 
-                a.drop-down__text(href="#") БЛОГ
+                a.link-element.drop-down__link(href="#") БЛОГ
               li.drop-down__item 
-                a.drop-down__text(href="#") ВИДЕО
+                a.link-element.drop-down__link(href="#") ВИДЕО
               li.drop-down__item 
-                a.drop-down__text(href="#") ВОПРОСЫ
+                a.link-element.drop-down__link(href="#") ВОПРОСЫ
           li.header__menu-item 
-            a.header__menu-link(href="#") ЦЕНЫ
+            a.link-element.header__menu-link(href="#") ЦЕНЫ
           li.header__menu-item 
-            a.header__menu-link(href="#") КОНТАКТЫ
+            a.link-element.header__menu-link(href="#") КОНТАКТЫ
       .header__buttons
         button.button(type="button")
           span.button__body.button--border ВХОД
@@ -45,8 +45,8 @@ mixin header
             +drop-down-arrow
         ul.drop-down__container
           li.drop-down__item
-            a.drop-down__text(href="#") РУС
+            a.link-element.drop-down__link(href="#") РУС
           li.drop-down__item 
-            a.drop-down__text(href="#") УКР
+            a.link-element.drop-down__link(href="#") УКР
     
     
