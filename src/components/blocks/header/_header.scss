@@ -63,7 +63,6 @@
 
   &__item{
     min-width: 160px;
-    //padding: 10px 0 10px 20px;
     background: #ffffff;
     cursor: pointer;
     &:hover {
@@ -71,7 +70,7 @@
     }
   }
 
-  &__text{
+  &__link{
     display: inline-block;
     padding: 10px 0 10px 20px;
     width: 100%;
@@ -107,9 +106,6 @@
         transform: rotate(-180deg);
         transition: all ease-in-out 0.3s;
     }
-  }
-  .drop-down__container{
-    //background: #ffffff;
   }
 }
 
