@@ -1,6 +1,7 @@
 block variables
-include ../includes/header/header
-include ../includes/svg/svg
+include ../components/blocks/header/header
+include ../components/blocks/footer/footer
+include ../components/blocks/svg/svg
 
 doctype html
 html(lang="en")
@@ -15,5 +16,7 @@ html(lang="en")
     block header 
       +header
     block content 
+    block footer 
+      +footer
     block scripts 
       script(type="module" src="./src/js/main.js")
