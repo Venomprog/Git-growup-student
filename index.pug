@@ -1,7 +1,10 @@
 extends src/layout/layout
+include src/components/pages/main/hero-block
 
 block variables
   -
     const pageName = "home"
     
 block content
+  main
+    +hero-block
