@@ -1,0 +1,58 @@
+.questions{
+  background-color: var(--card-bg-color);
+  font-size: 18px;
+  
+  &__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__title{
+    margin-bottom: 36px;
+  }
+
+  .accordion{
+    padding: 10px;
+
+    &__item{
+      margin-bottom: 18px;
+    }
+    
+    &__button{
+      color: var(--primary-color);
+      font-weight: 24px; 
+      font-weight: 700;
+    }
+    
+    &__head{
+      position: relative;
+      padding-bottom: 10px; 
+      padding-top: 10px; 
+      cursor: pointer;
+      &::before{
+        position: absolute;
+        content: '\002B';
+        color: var(--primary-color);;
+        font-size: 24px;
+        font-weight: bold;
+        bottom: 6px;
+        left: -20px;
+        float: left;
+      } 
+      &--active{
+        font-weight: 500;
+        &::before{
+          content: "\2212"
+        } 
+      }
+    } 
+
+    &__body{
+      &--hidden{
+        display: none;  
+      } 
+    } 
+  }
+}

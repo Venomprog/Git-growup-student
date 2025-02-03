@@ -1,0 +1,27 @@
+.advantages{
+  padding-top: 0;
+  &__wrapper{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.advantage-item{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  &__text-block{
+    width: 200px;
+  }
+
+  &__title{
+    margin-bottom: 15px;
+  }
+
+  svg{
+    color: var(--primary-color);
+  }
+}

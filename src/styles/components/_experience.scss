@@ -1,0 +1,25 @@
+.experience{
+  background-color: var(--section-bg-color);
+
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__number{
+    --base-font-weight: 500;
+    margin-bottom: 12px;
+    font-size: 73px;
+  }
+
+  &__title{
+    margin-bottom: 12px;
+  }
+
+  &__text{
+    font-size: 18px;
+    width: 440px;
+  }
+}

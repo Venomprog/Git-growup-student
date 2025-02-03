@@ -1,0 +1,47 @@
+.about{
+  background-color: var(--section-bg-color);
+
+  &__container{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text-block{
+    width: 400px;
+  }
+
+  &__title{
+    margin-bottom: 18px;
+  }
+
+  &__list{
+    padding-left: 8px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__item{
+    position: relative;
+    &::before {
+      content: "-";
+      position: absolute;
+      left: -8px;
+      // top: 5px;
+    }
+  }
+
+  &__button{
+    --button-heigth: 56px;
+    --button-padding: 0 50px;
+    font-weight: 700;
+  }
+}

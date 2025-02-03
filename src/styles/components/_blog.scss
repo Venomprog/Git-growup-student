@@ -1,0 +1,41 @@
+.blog{
+  background-color: var(--section-bg-color);
+
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .blog-card{
+    &__img{
+      position: relative;
+      display:inline-block;
+      margin-bottom: 14px;
+
+      &::after{
+        content:'';
+        z-index: 3;
+        position:absolute;
+        left:0; 
+        top:0;
+        width:100%; 
+        height:100%;
+        background: linear-gradient(to left top, rgb(255, 255, 255) 0%,rgba(255, 255, 255, 0) 100%);
+      }
+
+      img{
+        display:block;
+      }
+    }
+
+    &__body{
+      width: 250px;
+    }
+  
+    &__time{
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+  }
+}

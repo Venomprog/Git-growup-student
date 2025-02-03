@@ -1,0 +1,17 @@
+.partners{
+
+  &__title{
+    text-align: center;
+    margin-bottom: 46px;
+  }
+
+  &__item{
+    max-width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.partners-swiper{
+  height: 200px;
+}
