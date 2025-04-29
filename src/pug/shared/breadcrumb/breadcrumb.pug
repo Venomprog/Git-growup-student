@@ -1,0 +1,8 @@
+mixin breadcrumb(data, pageName)
+  .breadcrumb&attributes(attributes).text-12
+    .container.breadcrumb__wrapper
+      ul.breadcrumb__list
+        each item in data
+          li.breadcrumb__item
+            a.link-element(href=item[1] + ".html")=item[0]
+      span=pageName

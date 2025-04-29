@@ -1,0 +1,51 @@
+mixin hero(mods)
+  section.hero
+    .hero__swiper.hero-swiper
+      .swiper-wrapper
+        .swiper-slide
+          .hero-swiper__img.hero-swiper__img--first
+        .swiper-slide
+          .hero-swiper__img.hero-swiper__img--second
+        .swiper-slide
+          .hero-swiper__img.hero-swiper__img--third
+    .container
+      .hero__offer
+        h1.first-title.hero__title Цифровой документооборот в три этапа:
+        .hero-swiper
+          .swiper-wrapper
+            .swiper-slide
+              .hero__numbers
+                span.hero__number.hero__number--active 1
+                .hero__line
+                span.hero__number 2
+                .hero__line
+                span.hero__number 3
+              .hero__text-block
+                span.hero__subtitle Быстрая регистрация
+                p.hero__text
+                  | Мы создали, возможно, самую простую регистрацию. Регистрируйся, получай полный доступ к сервису и 1000 подписей документов в подарок!
+            .swiper-slide
+              .hero__numbers
+                span.hero__number 1
+                .hero__line
+                span.hero__number.hero__number--active 2
+                .hero__line
+                span.hero__number 3
+              .hero__text-block
+                span.hero__subtitle Загрузи документ
+                p.hero__text
+                  | Загружай в систему любой документ которые надо подписать, договор, акт выполненных работ, да что угодно
+            .swiper-slide
+              .hero__numbers
+                span.hero__number 1
+                .hero__line
+                span.hero__number 2
+                .hero__line
+                span.hero__number.hero__number--active 3
+              .hero__text-block
+                span.hero__subtitle Подпиши и отправь
+                p.hero__text
+                  | Подписывай своей электронно-цифровой подписью и за долю секунды отправь партнеру или компании. Он подписывает в ответ и все! Готово!
+        +button("ПОПРОБОВАТЬ БЕСПЛАТНО")(class="hero__button")
+    .swiper-container
+      .hero__swiper-pagination

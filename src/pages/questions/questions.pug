@@ -1,0 +1,13 @@
+extends ../../layout/layout
+
+block variables
+  -
+    const pageName = 'questions'
+    const pageTitle = 'questions'
+    const LinksObj = [["Главная", "main"]]
+
+block content
+  main(data-barba='container' data-barba-namespace=pageName)
+    +breadcrumb(LinksObj, "Популярные вопросы")
+    +popular-questions
+    +questions-form

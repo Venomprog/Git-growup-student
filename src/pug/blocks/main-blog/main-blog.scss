@@ -1,0 +1,36 @@
+.main-blog {
+  background-color: var(--section-bg-color);
+  &__wrapper{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+
+    .tags-list{
+      margin: 0;
+    }
+
+    .article-card__text{
+      margin: 0;
+    }
+
+    .article-card__image{
+      position: relative;
+    }
+
+    .article-card__image::after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to left top, rgba( 255, 255, 255), 30%, rgb(255,255,255,0) 60%);
+    }
+  }
+
+  &__title{
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}

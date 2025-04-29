@@ -1,0 +1,16 @@
+mixin article-card(data)
+  .article-card&attributes(attributes)
+    .article-card__image
+      img(src="/images/" + data.src, alt="")
+    .article-card__body
+      .article-card__time
+        time(datetime= data.date)= data.date
+      a.link-element(href="#")
+        h3.third-title.article-card__title= data.title
+      ul.tags-list
+        each tag in data.tags
+          li.tags-list__item
+            a.link-element(href="#")=tag
+      .article-card__text
+        p= data.text
+

@@ -1,0 +1,27 @@
+mixin contacts-block()
+  section.contacts-block
+    .container
+      h1.first-title.page-title Наши контакты
+      .contacts-block__wrapper
+        .contacts-block__offer
+          p.contacts-block__subtitle
+            | Мы всегда рады ответить на ваши вопросы и развивать эффективное сотрудничество по всем вопросам, связанным с электронным документооборотом.
+          ul.contacts-block__list
+            li.contacts-block__item
+              .contacts-block__icon
+                +fone-fill-icon
+              .contacts-block__phones
+                span 0 800 750 643
+                span +3 044 334 56 43
+                span +3 044 338 86 43
+            li.contacts-block__item
+              .contacts-block__icon
+                +mail-fill-icon
+              span infosmartsign@smarttender.biz
+            li.contacts-block__item
+              .contacts-block__icon
+                +location-fill-icon
+              span пр-т Бажана, 14 А Киев, 02072
+        .contacts-block__map
+          iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab1a574303d25cddfa90bb8aac7ffb311cbade46c34bfe53cc8be47676a315e50&amp;source=constructor" width="100%" height="100%" frameborder="0")
+

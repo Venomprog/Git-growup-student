@@ -1,0 +1,45 @@
+.hero-blog{
+  &__title{
+    margin-bottom: 20px;
+    width: 300px;
+  }
+
+  &__time{
+    margin-bottom: 12px;
+  }
+
+  &__wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-content: space-between;
+    justify-items: end;
+    align-items: center;
+    gap: 60px;
+  }
+
+  &__text-block{
+    max-width: 455px;
+  }
+
+  &__text{
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-blog{
+    &__text-block{
+      max-width: 100%;
+    }
+
+    &__wrapper{
+      justify-items: start;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-blog__wrapper{
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+}

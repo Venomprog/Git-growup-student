@@ -1,3 +1,147 @@
 .header {
-  flex: 0 1;
+  --base-font-weight: 500;
+  --fillColor: initial;
+  --strokeColor: currentColor;
+  z-index: 50;
+  top: 0;
+  padding-top: 36px;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__menu-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: auto;
+  }
+
+  .fone-select {
+    margin-right: 1em;
+  }
+
+  &__menu {
+    margin-right: 4em;
+  }
+
+  &__menu-list {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-right: 25px;
+  }
 }
+
+.drop-down{
+  position: relative;
+  transition: all ease-in-out 0.3s;
+  &__button{
+    display: flex;
+    width: 100%;
+    gap: 5px;
+    color: var(--text-color);
+    align-items: center;
+    border: none;
+    background: none;
+    font-size: 14px;
+    padding: 10px 5px 10px 10px;
+    cursor: pointer;
+
+    &:hover {
+      background: #E2EDFB;
+    }
+  }
+
+  &__item{
+    min-width: 160px;
+    background: #ffffff;
+    cursor: pointer;
+    &:hover {
+      background: #E2EDFB;
+    }
+  }
+
+  &__link{
+    display: inline-block;
+    padding: 10px 0 10px 10px;
+    width: 100%;
+  }
+
+  &__svg{
+    width: 8px;
+    height: 5px;
+  }
+
+  &__container{
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+  }
+}
+
+.dropdown-open {
+  .drop-down__container.dropdown-active {
+    display: block;
+  }
+}
+
+.drop-down__button svg{
+  transition: all ease-in-out 0.3s;
+}
+
+.dropdown-open {
+  .drop-down__button{
+    background: #E2EDFB;
+    svg{
+      transform: rotate(-180deg);
+      transition: all ease-in-out 0.3s;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 25px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    font-size: 12px;
+    .link-element, span{
+      font-size: 12px;
+    }
+
+    &__button{
+      --button-heigth: 35px;
+      --button-padding: 0 20px;
+      --button-font-size: 14px;
+    }
+
+    &__buttons{
+      margin-right: 1em;
+      gap: 1em;
+    }
+
+    &__menu{
+      margin-right: 2em;
+    }
+
+    &__menu-list{
+      gap: 15px;
+    }
+  }
+}
+
+
+

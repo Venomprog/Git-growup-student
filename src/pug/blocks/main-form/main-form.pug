@@ -1,0 +1,15 @@
+mixin main-form(message="Твой вопрос:")
+  form.main-form(class=attributes.class novalidate)
+    .main-form__row
+      label.main-form__label(for="name") Имя*:
+      +input("name", "text", "Иван", "[A-Za-zА-Яа-яЁё]{2,}")(class="name-input")
+    .main-form__row
+      label.main-form__label(for="email") Электронная почта*:
+      +input("email", "email", "ivan@mail.com")(class="email-input")
+    .main-form__row
+      label.main-form__label(for="phone") Телефон*:
+      +input("phone", "tel", "+38 000 000 00 00", "^[\+][0-9]{6,}")(class="phone-input")
+    .main-form__row
+      label.main-form__label(for="story")=message
+      textarea.standart-textarea(id="story" name="story" rows="5" cols="50" placeholder="введите тут")
+    +button("ОТПРАВИТЬ", "submit")(class="main-form__button", disabled)

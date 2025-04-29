@@ -1,0 +1,28 @@
+.breadcrumb {
+  padding-top: 20px;
+  position: relative;
+  display: flex;
+  font-weight: 500;
+  opacity: 60%;
+  &__item{
+    display: flex;
+    gap: 10px;
+    &::after{
+      content: "/";
+    }
+  }
+
+  &__wrapper{
+    display: flex;
+    gap: 10px;
+  }
+
+  &__list{
+    display: flex;
+    gap: 10px;
+  }
+
+  .link-element{
+    font-size: 12px;
+  }
+}

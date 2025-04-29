@@ -1,0 +1,14 @@
+extends ../../layout/layout
+
+block variables
+  -
+    const pageName = 'about'
+    const pageTitle = 'about'
+    const LinksObj = [["Главная", "main"]]
+
+block content
+  main(data-barba='container' data-barba-namespace=pageName)
+    +breadcrumb(LinksObj, "Про нас")
+    +about-main-block
+    +partners-block
+    +about-description

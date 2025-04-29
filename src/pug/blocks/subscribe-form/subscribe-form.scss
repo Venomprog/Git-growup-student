@@ -1,0 +1,15 @@
+.subscribe-form {
+  --form-color: var(--primary-color);
+  &__row{
+    letter-spacing: 1.5px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__button{
+    --button-padding: 0 40px;
+    --button-heigth: 50px;
+  }
+}

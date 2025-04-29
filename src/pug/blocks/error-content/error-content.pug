@@ -1,0 +1,10 @@
+mixin error-content()
+  section.error-content&attributes(attributes)
+    .container
+      .error-content__wrapper
+        .error-content__image
+          img(src="images/404-img.png", alt="")
+        .error-content__text
+          p Мы честно старались найти, но этой страницы по всей видимости не существует.
+        .error-content__button
+          a.link-element.error-content__link(href="main.html") НА ГЛАВНУЮ

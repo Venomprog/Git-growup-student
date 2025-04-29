@@ -1,0 +1,39 @@
+.main-form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+
+  &__row{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+  }
+
+  &__button{
+    --button-padding: 0 60px;
+    --button-heigth: 50px;
+  }
+
+  &__label{
+    padding-left: 25px;
+  }
+}
+
+.validity-icon{
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+}
+
+.standart-textarea{
+  --input-border: 1px solid var(--form-color);;
+  max-width: 400px;
+  border-radius: 10px;
+  padding: 20px 10px 10px 30px;
+  border: var(--input-border);
+  letter-spacing: 1.5px;
+  font-size: 18px;
+}

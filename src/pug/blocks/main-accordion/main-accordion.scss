@@ -1,0 +1,12 @@
+.main-accordion {
+  background-color: var(--card-bg-color);
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__title{
+    margin-bottom: 30px;
+  }
+}

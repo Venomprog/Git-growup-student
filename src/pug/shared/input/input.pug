@@ -1,0 +1,6 @@
+mixin input(value, type = "text", text, pattern)
+  .standart-input-wrapper
+    .standart-input-item
+      input.standart-input(type=type placeholder=text name=value id=value required class=attributes.class pattern=pattern)
+      span.validity-icon
+    .standart-input__error Введи корректный номер телефона

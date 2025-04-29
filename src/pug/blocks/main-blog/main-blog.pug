@@ -1,0 +1,26 @@
+mixin main-blog()
+  section.main-blog&attributes(attributes)
+    .container
+      h2.second-title.main-blog__title Интересно пишем про
+      .main-blog__wrapper
+        +article-card({
+          'src': 'blog-img1.jpeg',
+          'date': '05.03.2020',
+          'title': 'Заголовок короткий в две строки',
+          'text': '',
+          'tags': ''
+        })(class = "news card-gradient")
+        +article-card({
+          'src': 'blog-img2.jpeg',
+          'date': '02.05.2024',
+          'title': 'Заголовок короткий в две строки',
+          'text': '',
+          'tags': ''
+        })(class = "news training card-gradient")
+        +article-card({
+          'src': 'blog-img3.jpeg',
+          'date': '02.05.2024',
+          'title': 'Заголовок короткий в две строки',
+          'text': '',
+          'tags': ''
+        })(class = "news laws card-gradient hidden-mobile")

@@ -1,0 +1,21 @@
+mixin contacts-modal(mods)
+  .modal-wrapper(data-modal="contacts-modal")
+    .wrapper-overlay
+    .modal.contacts-modal
+      .contacts-modal__body
+        div(data-modal-close="modal-close").modal__close
+          button.modal-close-button(type="button")
+            +modale-close-icon
+        h3.modal__title Демо версия
+        p.modal__text.contacts-modal__text Заполни форму и наши менеджеры свяжутся с тобой
+        form.main-form(class=attributes.class novalidate)
+          .main-form__row
+            label.main-form__label(for="name") Имя*:
+            +input("name", "text", "Иван", "[A-Za-zА-Яа-яЁё]{2,}")(class="name-input")
+          .main-form__row
+            label.main-form__label(for="email") Электронная почта*:
+            +input("email", "email", "ivan@mail.com")(class="email-input")
+          .main-form__row
+            label.main-form__label(for="phone") Телефон*:
+            +input("phone", "tel", "+38 000 000 00 00", "^[\+][0-9]{6,}")(class="phone-input")
+          +button("ОТПРАВИТЬ", "submit")(class="main-form__button button--center", disabled)

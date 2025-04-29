@@ -1,0 +1,26 @@
+mixin about-blog()
+  section.about-blog&attributes(attributes)
+    .container
+      h2.second-title.about-blog__title Может быть интересно:
+      .about-blog__wrapper
+        +article-card({
+          'src': 'blog-img1.jpeg',
+          'date': '05.03.2020',
+          'title': 'Burn Calories Quicker in 30 Min.',
+          'text': 'Не следует, однако забывать, что дальнейшее развитие различных форм деятельности.',
+          'tags': ["рынок труда", "новости"]
+        })(class = "news")
+        +article-card({
+          'src': 'blog-img2.jpeg',
+          'date': '02.05.2024',
+          'title': 'Burn Calories Quicker',
+          'text': 'Не следует, однако забывать, что дальнейшее развитие различных форм деятельности.',
+          'tags': ["новости", "обучение"]
+        })(class = "news training")
+        +article-card({
+          'src': 'blog-img3.jpeg',
+          'date': '02.05.2024',
+          'title': 'Burn Calories Quicker',
+          'text': 'Не следует, однако забывать, что дальнейшее развитие различных форм деятельности.',
+          'tags': ["новости", "закон"]
+        })(class = "news laws hidden-mobile")

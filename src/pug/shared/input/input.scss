@@ -1,0 +1,85 @@
+.standart-input{
+  font-size: 18px;
+  --input-border: 1px solid var(--form-color);
+  width: 100%;
+  padding: 17px 0 17px 25px;
+  border-radius: 50px;
+  border: var(--input-border);
+  letter-spacing: 1.5px;
+
+  &-wrapper{
+    max-width: 400px;
+  }
+
+  &-item{
+    position: relative;
+    margin-bottom: 10px;
+    max-width: 400px;
+  }
+
+  &:disabled{
+    opacity: 40%;
+  }
+
+  &:valid{
+    border: 1px solid green;
+  }
+
+  &:invalid{
+    border: 1px solid #B70101;
+  }
+
+  &:invalid:placeholder-shown {
+    border: var(--input-border);
+  }
+
+  &:placeholder-shown:focus {
+    border: 2px solid var(--form-color);
+  }
+
+  &:valid + .validity-icon::before{
+    content: "";
+    background-image: url("../images/valid-icon.svg");
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+  }
+
+  &:invalid + .validity-icon::before{
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url("../images/invalid-icon.svg");
+  }
+
+  &__error{
+    display: none;
+    padding-left: 25px;
+    font-size: 10px;
+    color: #B70101;
+  }
+
+  &:invalid:placeholder-shown + .validity-icon::before{
+    visibility: hidden;
+  }
+
+  &:invalid:placeholder-shown ~ .standart-input__error{
+    visibility: hidden;
+  }
+
+  &:valid:placeholder-shown + .validity-icon::before {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .standart-input{
+    width: 100%;
+
+    &-wrapper{
+      width: 100%;
+    }
+  }
+}
+

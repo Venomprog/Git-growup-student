@@ -1,0 +1,8 @@
+mixin main-video(mods)
+  section.main-video
+    .container.main-video__container
+      h2.second-title.main-video__title Познакомимся в живую?
+      .main-video__wrapper
+        video.main-video__item.video-js.vjs-big-play-centered(poster="images/poster.png" data-setup='{}' controls)
+          source(src="video/office_tip.mp4" type="video/mp4")
+          p Ваш браузер не поддерживает встроеннoе видео.

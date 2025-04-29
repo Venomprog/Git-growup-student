@@ -1,0 +1,48 @@
+.tarifs{
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+    gap: 50px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .tarif{
+    --base-font-weight: 500;
+    padding: 32px;
+    background-color: var(--card-bg-color);
+
+    &__title{
+      font-size: 28px;
+      margin-bottom: 44px;
+    }
+
+    &__subtitle{
+      display: inline-block;
+      max-width: 205px;
+      margin-bottom: 12px;
+      &--margin-b{
+        padding-bottom: 65px;
+      }
+    }
+
+    &__price-block{
+      margin-bottom: 50px;
+    }
+
+    &__price{
+      font-size: 20px;
+      &--bold{
+        font-weight: 700;
+        font-size: 48px;
+      }
+    }
+
+    &__button{
+      .button__body{
+        min-width: 190px;
+        justify-content: center;
+      }
+    }
+  }
+}

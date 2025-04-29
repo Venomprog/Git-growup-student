@@ -1,0 +1,25 @@
+.questions-form {
+  background-color: var(--section-bg-color);
+
+  &__title{
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  &__subtitle{
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  &__item{
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__item {
+    button{
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}

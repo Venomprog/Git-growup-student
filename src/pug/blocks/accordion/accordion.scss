@@ -1,0 +1,60 @@
+.accordion{
+  max-width: 500px;
+  padding-left: 20px;
+
+  &__item{
+    margin-bottom: 18px;
+  }
+
+  &__title{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: -20px;
+
+    &::before{
+      content: '\002B';
+      font-size: 24px;
+      font-weight: bold;
+      float: left;
+      color: var(--primary-color);;
+    }
+
+    &--left-icon{
+      flex-direction: row-reverse;
+      justify-content: left;
+      margin-left: 0;
+      margin-bottom: 20px;
+      
+      &::before{
+        margin-left: 5px;
+      }
+
+      .accordion__title{
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__head{
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    &--active{
+      font-weight: 500;
+      .accordion__title::before{
+        content: "\2212"
+      }
+      .popular-questions__count{
+        display: none;
+      }
+    }
+  }
+
+  &__body{
+    &--hidden{
+      display: none;
+    }
+  }
+}

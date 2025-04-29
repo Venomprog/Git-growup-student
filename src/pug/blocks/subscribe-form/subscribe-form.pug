@@ -1,0 +1,6 @@
+mixin subscribe-form()
+  form.subscribe-form(novalidate)&attributes(attributes)
+    .subscribe-form__row
+      +input("email", "email", "")(class="email-input")
+      +button("отправить", "submit",)(class="subscribe-form__button")
+

@@ -1,0 +1,38 @@
+.subscribe-block {
+  background-color: var(--section-bg-color);
+
+  &__body{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 30px;
+  }
+
+  &__title{
+    text-align: center;
+  }
+
+  &__subtitle{
+    text-align: center;
+  }
+
+  .standart-input-wrapper{
+    flex: 1 1 200px;
+    align-self: flex-start;
+  }
+}
+
+.success-block{
+  display: none;
+  text-align: center;
+  &__title{
+    margin-bottom: 30px;
+  }
+
+  &__text{
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

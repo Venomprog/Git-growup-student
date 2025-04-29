@@ -1,0 +1,12 @@
+mixin modal(modalData)
+	.modal-wrapper(data-modal=modalData.name)
+		.wrapper-overlay
+		.modal
+			.modal__body
+				div(data-modal-close="modal-close").modal__close
+					button.modal-close-button(type="button")
+						+modale-close-icon
+				h3.modal__title=modalData.title
+				p.modal__text=modalData.text
+				.modal__img
+					img(src="images/message.svg", alt="")

@@ -1,0 +1,33 @@
+mixin main-about(mods)
+  section.main-about
+    .container.main-about__container
+      .main-about__wrapper
+        .main-about__text-block
+          h2.second-title.main-about__title Комфорт в работе
+          ul.main-about__list
+            li.main-about__item
+              p Создавай документы по твоим личным привычным шаблонам. Это индивидуально!
+            li.main-about__item
+              p Настраивай порядок подписание документа, если вас несколько человек. Это ответственно!
+            li.main-about__item
+              p Загружай XML файл с собственным шаблоном готового документа. Это удобно!
+            li.main-about__item
+              p Работай в супер простом и понятном интерфейсе без сложностей. Это приятно!
+          +button("УЗНАТЬ БОЛЬШЕ")(class="main-about__button button--border")
+        .main-about__img
+          img(src="images/about1.jpeg" alt="")
+      .main-about__wrapper.wrapper-reverse
+        .main-about__img
+          img(src="images/about2.jpeg" alt="")
+        .main-about__text-block
+          h2.second-title.main-about__title Наш продукт это:
+          ul.main-about__list
+            li.main-about__item
+              p Web версия без установки программного обеспечения
+            li.main-about__item
+              p Возможность бесплатно и безлимитно обрабатывать входящие документы
+            li.main-about__item
+              p Простота интеграции с 1С и другими сервисами
+            li.main-about__item
+              p Поддержка входа через Mobile ID
+          +button("РЕГИСТРАЦИЯ")(class="main-about__button")

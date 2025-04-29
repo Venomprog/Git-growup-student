@@ -1,0 +1,14 @@
+.about-blog {
+  &__title{
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &__wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: space-between;
+    justify-items: center;
+    gap: 40px;
+  }
+}

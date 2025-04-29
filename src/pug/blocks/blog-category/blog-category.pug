@@ -1,0 +1,89 @@
+mixin blog-category(mods)
+  section.blog-category
+    .container
+      ul.blog-category__filter.hidden-mobile
+        li.blog-category__item.link-active(data-tag="all")
+          a.link-element.link-underline.blog-category__link(href="#") ВСЕ
+        li.blog-category__item(data-tag="news")
+          a.link-element.link-underline.blog-category__link(href="#") НОВОСТИ
+        li.blog-category__item(data-tag="training")
+          a.link-element.link-underline.blog-category__link(href="#") ОБУЧЕНИЕ
+        li.blog-category__item(data-tag="laws")
+          a.link-element.link-underline.blog-category__link(href="#") ЗАКОНЫ
+      .drop-down.drop-down__filter.visible-mobile
+        button.drop-down__button(type="button")
+          span.drop-down__title ВСЕ
+          .drop-down__svg
+            +drop-down-arrow
+        ul.blog-category__filter.drop-down__container
+          li.drop-down__item.blog-category__item.link-active(data-tag="all")
+            a.link-element.blog-category__link.drop-down__link(href="#") ВСЕ
+          li.drop-down__item.blog-category__item(data-tag="news")
+             a.link-element.blog-category__link.drop-down__link(href="#") НОВОСТИ
+          li.drop-down__item.blog-category__item(data-tag="training")
+           a.link-element.blog-category__link.drop-down__link(href="#") ОБУЧЕНИЕ
+          li.drop-down__item.blog-category__item(data-tag="laws")
+            a.link-element.blog-category__link.drop-down__link(href="#") ЗАКОНЫ
+      .blog-category__wrapper
+        +article-card({
+          'src': 'blog-img1.jpeg',
+          'date': '05.03.2020',
+          'title': 'Burn Calories Quicker in 30 Min.',
+          'text': 'Не следует, однако забывать, что дальнейшее развитие различных форм деятельности.',
+          'tags': ["рынок труда", "новости"]
+        })(class = "news")
+        +article-card({
+          'src': 'blog-img2.jpeg',
+          'date': '02.05.2024',
+          'title': 'Burn Calories Quicker',
+          'text': 'Не следует, однако забывать, что дальнейшее развитие различных форм деятельности.',
+          'tags': ["новости", "обучение"]
+        })(class = "news training")
+        +article-card({
+          'src': 'blog-img3.jpeg',
+          'date': '02.05.2024',
+          'title': 'Burn Calories Quicker',
+          'text': 'Не следует, однако забывать, что дальнейшее развитие различных форм деятельности.',
+          'tags': ["новости", "закон"]
+        })(class = "news laws")
+        +article-card({
+          'src': 'blog-img4.jpeg',
+          'date': '02.05.2024',
+          'title': 'Burn Calories Quicker',
+          'text': 'Не следует, однако забывать, что дальнейшее развитие различных форм деятельности.',
+          'tags': ["закон", "обучение"]
+        })(class = "laws training")
+        +article-card({
+          'src': 'blog-img5.jpeg',
+          'date': '02.05.2024',
+          'title': 'Burn Calories Quicker',
+          'text': 'Не следует, однако забывать, что дальнейшее развитие различных форм деятельности.',
+          'tags': ["про продукт", "закон"]
+        })(class = "laws")
+        +article-card({
+          'src': 'blog-img1.jpeg',
+          'date': '02.05.2024',
+          'title': 'Burn Calories Quicker',
+          'text': 'Не следует, однако забывать, что дальнейшее развитие различных форм деятельности.',
+          'tags': ["обучение", "теги"]
+        })(class = "training")
+      .blog-category__nav
+        a.blog-category__prev.hidden-mobile-320(href="#") назад
+        .visible-mobile-320.blog-category-nav__arrow
+          a(href="#")
+            img(src="images/arrow-left.svg", alt="")
+        ul.blog-category-nav
+          li.blog-category-nav__item
+            a.link-element.page-number.page-number--active(href="#") 01
+          li.blog-category-nav__item
+            a.link-element.page-number(href="#") 02
+          li.blog-category-nav__item
+            a.link-element.page-number(href="#") 03
+          li.blog-category-nav__item
+            a.link-element.page-number(href="#") 04
+        a.blog-category__next.hidden-mobile-320(href="#") дальше
+        .visible-mobile-320.blog-category-nav__arrow
+          a(href="#")
+            img(src="images/arrow-right.svg", alt="")
+
+

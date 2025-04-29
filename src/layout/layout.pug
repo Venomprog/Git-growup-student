@@ -17,6 +17,18 @@ html(lang='ru')
     .wrapper
       block header
         +header
+      block modals
+        +modal({
+          "name": "success-send-modal",
+          "title": "Спасибо",
+          "text": "Твое сообщение отправленно! Наши менеджеры свяжутся с тобой в ближайшее время."
+        })
+        +modal({
+          "name": "success-send-demo-modal",
+          "title": "Демо версия",
+          "text": "Заявка отправленна и наши менеджеры свяжутся с тобой в ближайшее время."
+        })
+        +contacts-modal
       block content
       block footer
         +footer

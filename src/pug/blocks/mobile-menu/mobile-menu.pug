@@ -1,0 +1,35 @@
+mixin mobile-menu()
+  .visible-mobile.mobile-menu.mobile-menu-768&attributes(attributes)
+    .mobile-menu__head
+      +logo.mobile-menu__logo
+      .mobile-menu__line
+    .mobile-menu__wrapper
+      .mobile-menu__fones
+        ul.mobile-menu__list
+          li.mobile-menu__item
+            a.link-element(href="tel:0800750643") 0 800 750643
+          li.mobile-menu__item
+            a.link-element(href="tel:+380443345643") +380 44 334 56 43
+          li.mobile-menu__item
+            a.link-element(href="tel:+380443388643") +380 44 338 86 43
+      .mobile-menu__line
+      .mobile-menu__buttons.mobile-menu__item
+        +button("Вход")(class="button--border")
+        +button("регистрация")
+      .mobile-menu__line
+      nav.mobile-menu__navigation
+        ul.mobile-menu__list
+          li.mobile-menu__item
+            a.link-element(href="#") Home
+          li.mobile-menu__item
+            a.link-element(href="#") Service
+          li.mobile-menu__item
+            a.link-element(href="#") Top cities
+          li.mobile-menu__item
+            a.link-element(href="#") Contract
+      .mobile-menu__line
+      ul.mobile-menu__lang
+        li.mobile-menu__item
+          a.link-element(href="#") РУС
+        li.mobile-menu__item
+          a.link-element(href="#") УКР

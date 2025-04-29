@@ -1,0 +1,10 @@
+mixin subscribe-block()
+  section.subscribe-block&attributes(attributes)
+    .container.subscribe-block__container
+      .subscribe-block__body
+        h2.second-title.subscribe-block__title Подпишись на наши новости!
+        p.subscribe-block__subtitle Введи свой электронный адрес и будь в курсе всех обновлений
+        +subscribe-form
+      .success-block
+        h2.second-title.success-block__title Отлично!
+        p.success-block__text На адресс example@maile.com теперь будут приходить самые важные новости

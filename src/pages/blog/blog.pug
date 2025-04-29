@@ -1,0 +1,16 @@
+extends ../../layout/layout
+
+block variables
+  -
+    const pageName = 'blog'
+    const pageTitle = 'blog'
+    const LinksObj = [["Главная", "main"]]
+
+block content
+  main(data-barba='container' data-barba-namespace=pageName)
+    +breadcrumb(LinksObj, "Блог")
+    +hero-blog
+    +blog-category
+    +subscribe-block
+    +blog-description
+

@@ -1,0 +1,14 @@
+extends ../../layout/layout
+
+block variables
+  -
+    const pageName = 'video-guides'
+    const pageTitle = 'video-guides'
+    const LinksObj = [["Главная", "main"]]
+
+block content
+  main(data-barba='container' data-barba-namespace=pageName)
+  +breadcrumb(LinksObj, "Видео инструкции")
+  +videos-block
+  +about-blog.bg-color-none
+  +subscribe-block
