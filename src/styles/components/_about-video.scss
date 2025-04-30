@@ -1,0 +1,36 @@
+.about-video{
+  transition: 2s ease-in-out;
+  &__container{
+    display: flex;
+    justify-content: center;
+  }
+  &__title{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__item{
+    width: 734px;
+    height: 451px;
+  }
+
+  .video-js .vjs-big-play-button{
+    top: 40%;
+    left: 50%;
+    margin-top: auto;
+    width: 102px;
+    height: 102px;
+    color: var(--primary-color);
+    background-color: #ffffff;
+    border: none;
+    border-radius: 100px;
+
+    .vjs-icon-placeholder:before{
+      font-size: 50px;
+      top: 30% !important;
+    }
+  }
+
+  .video-js:hover .vjs-big-play-button{
+    background-color: #DEEEFC;
+  }
+} 

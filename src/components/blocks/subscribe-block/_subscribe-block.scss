@@ -1,0 +1,19 @@
+.subscribe{
+  &__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__form{
+    display: flex;
+    gap: 30px;
+  }
+
+  &__button{
+    --button-padding: 0 40px;
+    --button-heigth: 50px;
+  }
+ 
+}

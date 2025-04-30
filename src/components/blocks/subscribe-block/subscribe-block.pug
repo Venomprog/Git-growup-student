@@ -1,0 +1,9 @@
+mixin subscribe-block 
+  section.subscribe
+    .container.subscribe__container
+      h2 Подпишись на наши новости!
+      p.subscribe__subtitle Введи свой электронный адрес и будь в курсе всех обновлений
+      form.subscribe__form(action="" method="get")
+        +input("email", "email")
+        button.button.subscribe__button(type="submit")
+          span.button__body ОТПРАВИТЬ

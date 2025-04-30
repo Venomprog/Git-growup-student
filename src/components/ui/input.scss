@@ -1,0 +1,18 @@
+.subscribe-input{
+  --input-border: 1px solid var(--primary-color);;
+  width: 400px;
+  height: 50px;
+  padding-left: 25px;
+  border-radius: 50px;
+  border: var(--input-border);
+  letter-spacing: 1.5px;
+  font-size: 16px;
+  &:focus{
+    outline-width: 0;
+    border: 2px solid var(--primary-color);
+  }
+
+  &:disabled{
+    opacity: 40%;
+  }
+}

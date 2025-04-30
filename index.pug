@@ -1,7 +1,28 @@
 extends src/layout/layout
+include src/components/pages/main/hero-block
+include src/components/pages/main/hero-block
+include src/components/pages/main/advantages-block
+include src/components/pages/main/about-block
+include src/components/pages/main/tariffs
+include src/components/pages/main/experience
+include src/components/pages/main/partners-block
+include src/components/pages/main/blog
+include src/components/pages/main/about-video-block
+include src/components/pages/main/questions
 
 block variables
   -
     const pageName = "home"
     
 block content
+  main
+    +hero-block
+    +advantages-block
+    +about-block
+    +tariffs
+    +experience-block
+    +partners-block
+    +blog
+    +about-video-block
+    +questions-block 
+    +subscribe-block

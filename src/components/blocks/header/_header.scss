@@ -2,6 +2,9 @@
   --base-font-weight: 500;
   --fillColor: initial;
   --strokeColor: currentColor;
+  position: relative;
+  z-index: 2;
+  top: 0;
   padding-top: 36px;
   &__container {
     display: flex;
