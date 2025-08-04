@@ -3,8 +3,18 @@
   --fillColor: initial;
   --strokeColor: currentColor;
   z-index: 50;
+  position: fixed;
+  width: 100%;
   top: 0;
   padding-top: 36px;
+  padding-bottom: 20px;
+  transition: 0.6s ease-in-out;
+
+  &--bg-color{
+    background-color: #ffffff;
+    padding: 15px 0;
+  }
+  
   &__container {
     display: flex;
     align-items: center;

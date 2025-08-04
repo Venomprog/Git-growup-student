@@ -1,5 +1,6 @@
 import 'lazysizes'
 import 'virtual:svg-icons-register'
+import fixedHeader from "../pug/blocks/header/header.js";
 import dropDownMenu from "./components/drop-down-menu";
 import selectMenu from "./components/select";
 import accordion from "./components/accordion";
@@ -20,7 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 export const commonFunction = () => {
-  openModals()
+  fixedHeader();
+  openModals();
   dropDownMenu();
   heroSwiperInit();
   partnersSwiperInit();
