@@ -13,6 +13,7 @@ import openTextInit from "./components/open-text";
 import videoJsInit from "./components/custum-video";
 import heroSwiperInit from "./components/hero-swiper";
 import backToTop from "./components/back-to-top";
+import fullScreenVideoInit from "./components/full-screen-video";
 
 import '../styles/style.scss'
 
@@ -38,4 +39,5 @@ export const commonFunction = () => {
   categoryFilterInit('.drop-down__filter');
   openTextInit();
   videoJsInit();
+  fullScreenVideoInit()
 }

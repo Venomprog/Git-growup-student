@@ -3,6 +3,7 @@ mixin main-video(mods)
     .container.main-video__container
       h2.second-title.main-video__title Познакомимся в живую?
       .main-video__wrapper
-        video.main-video__item.video-js.vjs-big-play-centered(poster="images/poster.png" data-setup='{}' controls)
-          source(src="video/office_tip.mp4" type="video/mp4")
-          p Ваш браузер не поддерживает встроеннoе видео.
+        .video-container
+          .video-poster.video-poster-wrapper(data-video="video/office_tip.mp4")
+            img(alt="Play this video" src="images/poster.png")
+            .video-play-button

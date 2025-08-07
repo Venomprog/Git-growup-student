@@ -6,40 +6,43 @@ mixin videos-block(mods)
         h3.third-title.videos-block__title Название видео инструкции
         .videos-block__time
           time(datetime="28.05.2020") 28.05.2020
-        .videos-block__item.main-video-wrapper
-          video.main-video.video-js(poster="images/video-guide1.jpeg" data-setup='{}' controls)
-            source(src="/video/office_tip.mp4" type="video/mp4")
-            p Ваш браузер не поддерживает встроеннoе видео.
+        .main-video-wrapper
+          .video-poster.video-poster-wrapper(data-video="video/office_tip.mp4")
+            img(alt="Play this video" src="images/video-guide1.jpeg")
+            .video-play-button
+      div(data-modal-close="video-close").video-close
+        button.modal-close-button(type="button")
+          +modale-close-icon
       ul.videos-block__wrapper
         li.videos-block__card
           .videos-block__item
-            video.video.video-js.vjs-big-play-centered(poster="/images/video-guide2.jpeg" data-setup='{}' controls)
-              source(src="/video/office_tip.mp4" type="video/mp4")
-              p Ваш браузер не поддерживает встроеннoе видео.
+            .video-poster.video-block-poster(data-video="video/office_tip.mp4")
+              img(alt="Play this video" src="images/video-guide2.jpeg")
+              .video-play-button
           h3.third-title.videos-block__title Burn Calories Quicker in 30 Min.
           .videos-block__time
             time(datetime="05.03.2020") 05.03.2020
         li.videos-block__card
           .videos-block__item
-            video.video.video-js.vjs-big-play-centered(poster="/images/video-guide2.jpeg" data-setup='{}' controls)
-              source(src="/video/office_tip.mp4" type="video/mp4")
-              p Ваш браузер не поддерживает встроеннoе видео.
+            .video-poster.video-block-poster(data-video="video/office_tip.mp4")
+              img(alt="Play this video" src="images/video-guide2.jpeg")
+              .video-play-button
           h3.third-title.videos-block__title Burn Calories Quicker in 30 Min.
           .videos-block__time
             time(datetime="05.03.2020") 05.03.2020
         li.videos-block__card
           .videos-block__item
-            video.video.video-js.vjs-big-play-centered(poster="/images/video-guide2.jpeg" data-setup='{}' controls)
-              source(src="/video/office_tip.mp4" type="video/mp4")
-              p Ваш браузер не поддерживает встроеннoе видео.
+            .video-poster.video-block-poster(data-video="video/office_tip.mp4")
+              img(alt="Play this video" src="images/video-guide2.jpeg")
+              .video-play-button
           h3.third-title.videos-block__title Burn Calories Quicker in 30 Min.
           .videos-block__time
             time(datetime="05.03.2020") 05.03.2020
         li.videos-block__card
           .videos-block__item
-            video.video.video-js.vjs-big-play-centered(poster="/images/video-guide2.jpeg" data-setup='{}' controls)
-              source(src="/video/office_tip.mp4" type="video/mp4")
-              p Ваш браузер не поддерживает встроеннoе видео.
+            .video-poster.video-block-poster(data-video="video/office_tip.mp4")
+              img(alt="Play this video" src="images/video-guide2.jpeg")
+              .video-play-button
           h3.third-title.videos-block__title Burn Calories Quicker in 30 Min.
           .videos-block__time
             time(datetime="05.03.2020") 05.03.2020
