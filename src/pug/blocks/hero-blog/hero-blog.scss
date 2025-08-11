@@ -15,31 +15,22 @@
     justify-items: end;
     align-items: center;
     gap: 60px;
+    @media#{media('<',d)} {
+      justify-items: start;
+    }
+    @media#{media('<',m)} {
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
   }
 
   &__text-block{
     max-width: 455px;
+    @media#{media('<',d)} {
+      max-width: 100%;
+    }
   }
 
   &__text{
     margin-bottom: 30px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .hero-blog{
-    &__text-block{
-      max-width: 100%;
-    }
-
-    &__wrapper{
-      justify-items: start;
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .hero-blog__wrapper{
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   }
 }

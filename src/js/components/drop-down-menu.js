@@ -31,4 +31,4 @@ const dropDownMenu =() =>{
   });
 }
 
-export default dropDownMenu
+export {dropDownMenu};

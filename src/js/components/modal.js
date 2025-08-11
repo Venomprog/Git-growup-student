@@ -24,4 +24,4 @@ const openModals =() =>{
   }
 };
 
-export default openModals;
+export {openModals};

@@ -44,4 +44,4 @@ const categoryFilterInit = (filterWrapper) => {
   }
 };
 
-export default categoryFilterInit;
+export {categoryFilterInit};

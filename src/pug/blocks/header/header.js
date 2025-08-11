@@ -9,4 +9,4 @@ const fixedHeader = () => {
   });
 }
 
-export default fixedHeader;
+export {fixedHeader};

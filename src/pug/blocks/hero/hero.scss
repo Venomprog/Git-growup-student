@@ -13,6 +13,10 @@
     min-width: 220px;
     width: 40vw;
     padding-top: 150px;
+    @media#{media('<',m)} {
+      width: 50vw;
+      padding-top: 100px;
+    }
   }
 
   &__title{
@@ -62,6 +66,9 @@
     --button-heigth: 56px;
     font-weight: 700;
     letter-spacing: 0.1em;
+    @media#{media('<',xs)} {
+      margin: 0 auto;
+    }
   }
 }
 
@@ -77,12 +84,39 @@
     background-size: cover;
     &--first{
       background-image: url('images/hero1.jpeg');
+      @media#{media('<',d)} {
+        background-image: url('images/hero1-1200.jpeg');
+      }
+      @media#{media('<',m)} {
+        background-image: url('images/hero1-768.jpeg');
+      }
+      @media#{media('<',xs)} {
+        background-image: url('images/hero1-320.jpeg');
+      }
     }
     &--second{
       background-image: url('images/hero2.jpeg');
+      @media#{media('<',d)} {
+        background-image: url('images/hero2-1200.jpeg');
+      }
+      @media#{media('<',m)} {
+        background-image: url('images/hero2-768.jpeg');
+      }
+      @media#{media('<',xs)} {
+        background-image: url('images/hero2-320.jpeg');
+      }
     }
     &--third{
       background-image: url('images/hero3.jpeg');
+      @media#{media('<',d)} {
+        background-image: url('images/hero3-1200.jpeg');
+      }
+      @media#{media('<',m)} {
+        background-image: url('images/hero3-768.jpeg');
+      }
+      @media#{media('<',xs)} {
+        background-image: url('images/hero3-320.jpeg');
+      }
     }
   }
 }
@@ -107,59 +141,4 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-}
-
-@media screen and (max-width: 1200px) {
-  .hero-swiper{
-    &__img{
-      &--first{
-        background-image: url('images/hero1-1200.jpeg');
-      }
-      &--second{
-        background-image: url('images/hero2-1200.jpeg');
-      }
-      &--third{
-        background-image: url('images/hero3-1200.jpeg');
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .hero-swiper__img{
-    &--first{
-      background-image: url('images/hero1-768.jpeg');
-    }
-    &--second{
-      background-image: url('images/hero2-768.jpeg');
-    }
-    &--third{
-      background-image: url('images/hero3-768.jpeg');
-    }
-  }
-
-  .hero__offer{
-    width: 50vw;
-    padding-top: 100px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .hero-swiper{
-    &__img{
-      &--first{
-        background-image: url('images/hero1-320.jpeg');
-      }
-      &--second{
-        background-image: url('images/hero2-320.jpeg');
-      }
-      &--third{
-        background-image: url('images/hero3-320.jpeg');
-      }
-    }
-  }
-
-  .hero__button{
-    margin: 0 auto;
-  }
 }

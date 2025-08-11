@@ -13,16 +13,29 @@
     font-size: 14px;
     display: flex;
     margin-bottom: 30px;
+    @media#{media('<',m)} {
+      padding-right: 60px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+    }
   }
 
   &__contacts-block{
     display: flex;
     gap: 5vw;
     margin-left: auto;
+    @media#{media('<',m)} {
+      flex-direction: column;
+      margin-left: 0;
+    }
   }
 
   &__logo{
     margin-right: 10vw;
+    @media#{media('<',m)} {
+      margin-right: 0;
+    }
   }
 
   &__nav{
@@ -33,12 +46,20 @@
     column-gap: 4vw;
     row-gap: 30px;
     margin-right: 5vw;
+    @media#{media('<',m)} {
+      gap: 30px;
+    }
 
     .footer-nav {
       &__item{
         display: flex;
         flex-direction: column;
         gap: 20px;
+        @media#{media('<',m)} {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+        }
       }
     }
   }
@@ -47,6 +68,9 @@
     display: flex;
     flex-direction: column;
     gap: 6px;
+    @media#{media('<',m)} {
+      gap: 30px;
+    }
   }
 
   &__contacts{
@@ -67,6 +91,9 @@
     opacity: 40%;
     .copyright{
       margin-right: 150px;
+      @media#{media('<',m)} {
+        margin-right: 0;
+      }
     }
   }
 
@@ -77,54 +104,8 @@
     width: 10em;
     max-width: 52px;
     min-width: 30px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .footer {
-    &__contacts-block{
-      flex-direction: column;
-      margin-left: 0;
+    @media#{media('<',xs)} {
+      top: -1rem;
     }
-
-    &__networks {
-      gap: 30px;
-    }
-
-    &__wrapper{
-      padding-right: 60px;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 40px;
-    }
-
-    &__logo{
-      margin-right: 0;
-    }
-
-    &__nav{
-      margin-right: 0;
-      gap: 2rem;
-    }
-
-    .footer-nav {
-      &__item{
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-      }
-    }
-
-    .copyright-block{
-      .copyright{
-        margin-right: 0;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .footer__arrow-up{
-    top: -1rem;
   }
 }

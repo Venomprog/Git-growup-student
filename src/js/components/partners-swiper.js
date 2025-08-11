@@ -5,8 +5,8 @@ import 'swiper/css/pagination';
 
 const partnersSwiperInit = () => {
   const partnersSwiper = new Swiper(".partners-swiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
+    slidesPerView: 3,
+    spaceBetween: 50,
     speed: 2500,
     arrows: false,
 
@@ -14,7 +14,13 @@ const partnersSwiperInit = () => {
       el: ".partners__swiper-pagination",
       clickable: true,
     },
+    breakpoints: {
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 30
+      },
+    }
   });
 }
 
-export default partnersSwiperInit;
+export {partnersSwiperInit};

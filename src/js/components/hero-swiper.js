@@ -27,4 +27,4 @@ const heroSwiperInit = () => {
   });
 };
 
-export default heroSwiperInit;
+export {heroSwiperInit};

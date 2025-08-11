@@ -11,4 +11,4 @@ const selectMenu =(select) =>{
   }
 }
 
-  export default selectMenu
+export {selectMenu};

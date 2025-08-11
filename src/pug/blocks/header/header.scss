@@ -9,6 +9,21 @@
   padding-top: 36px;
   padding-bottom: 20px;
   transition: 0.6s ease-in-out;
+  @media#{media('<',m)} {
+    padding-top: 25px;
+  }
+
+  @media#{media('<',d)} {
+    font-size: 12px;
+  }
+
+  &__button{
+    @media#{media('<',d)} {
+      --button-heigth: 35px;
+      --button-padding: 0 20px;
+      --button-font-size: 14px;
+    }
+  }
 
   &--bg-color{
     background-color: #ffffff;
@@ -30,18 +45,24 @@
     margin-right: auto;
   }
 
-  .fone-select {
+  .phone-select {
     margin-right: 1em;
   }
 
   &__menu {
     margin-right: 4em;
+    @media#{media('<',d)} {
+      margin-right: 2em;
+    }
   }
 
   &__menu-list {
     display: flex;
     align-items: center;
     gap: 36px;
+    @media#{media('<',d)} {
+      gap: 15px;
+    }
   }
 
   &__buttons {
@@ -49,6 +70,10 @@
     align-items: center;
     gap: 25px;
     margin-right: 25px;
+    @media#{media('<',d)} {
+      margin-right: 1em;
+      gap: 1em;
+    }
   }
 }
 
@@ -119,37 +144,9 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .header {
-    padding-top: 25px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .header {
+.link-element, span{
+  @media#{media('<',d)} {
     font-size: 12px;
-    .link-element, span{
-      font-size: 12px;
-    }
-
-    &__button{
-      --button-heigth: 35px;
-      --button-padding: 0 20px;
-      --button-font-size: 14px;
-    }
-
-    &__buttons{
-      margin-right: 1em;
-      gap: 1em;
-    }
-
-    &__menu{
-      margin-right: 2em;
-    }
-
-    &__menu-list{
-      gap: 15px;
-    }
   }
 }
 

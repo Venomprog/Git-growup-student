@@ -38,4 +38,4 @@ const fullScreenVideoInit =() =>{
   });
 };
 
-export default fullScreenVideoInit;
+export {fullScreenVideoInit};

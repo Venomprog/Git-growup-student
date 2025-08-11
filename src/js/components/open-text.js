@@ -17,4 +17,4 @@ const openTextInit = () => {
   }
 }
 
-export default openTextInit;
+export {openTextInit};

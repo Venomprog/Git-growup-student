@@ -64,9 +64,9 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .contacts-modal {
-    &__title{
+.contacts-modal {
+  &__title{
+    @media#{media('<',m)} {
       font-size: 20px;
     }
   }

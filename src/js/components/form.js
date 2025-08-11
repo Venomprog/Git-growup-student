@@ -55,4 +55,4 @@ const formInit =() =>{
   }
 };
 
-export default formInit;
+export {formInit};

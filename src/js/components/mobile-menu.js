@@ -22,4 +22,4 @@ const mobileMenu =(buttonSelector, menuSelector,) =>{
   });
 };
 
-export default mobileMenu
+export {mobileMenu};

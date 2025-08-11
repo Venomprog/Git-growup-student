@@ -4,16 +4,9 @@
     margin-bottom: 46px;
   }
 
-  &__item{
-    display: flex;
-    align-items: center;
-    max-width: 200px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   &__wrapper{
     height: auto;
+    width: 100%;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
@@ -25,10 +18,11 @@
   overflow: hidden;
 
   &__slide{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    float: right;
-    gap: 45px;
+    display: flex;
+    align-items: center;
+    width: rem(200px);
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -38,10 +32,4 @@
 
 .partners-swiper-container{
   position: static;
-}
-
-@media screen and (max-width: 768px) {
-  .partners-swiper__slide{
-    grid-template-columns: repeat(2, 1fr);
-  }
 }

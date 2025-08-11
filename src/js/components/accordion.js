@@ -23,4 +23,4 @@ const accordion = () => {
   });
 };
 
-export default accordion;
+export {accordion};

@@ -1,6 +1,6 @@
 const videoJsInit =() =>{
 
-  const videoWrappers = document.querySelectorAll(".сustom-video-poster");
+  const videoWrappers = document.querySelectorAll(".video-poster-wrapper");
   if(!videoWrappers) return;
   videoWrappers.forEach(item => {
     item.addEventListener('click', function (event) {
@@ -13,4 +13,4 @@ const videoJsInit =() =>{
   })
 }
 
-export default videoJsInit;
+export {videoJsInit};
