@@ -1,5 +1,4 @@
 const videoJsInit =() =>{
-
   const videoWrappers = document.querySelectorAll(".video-poster-wrapper");
   if(!videoWrappers) return;
   videoWrappers.forEach(item => {

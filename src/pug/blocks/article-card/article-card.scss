@@ -1,4 +1,8 @@
 .article-card {
+  display: block;
+  &--hidden{
+    display: none;
+  }
   &__image{
     margin-bottom: 15px;
     max-width: 380px;

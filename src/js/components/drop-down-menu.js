@@ -25,7 +25,7 @@ const dropDownMenu =() =>{
   }
 
   window.addEventListener('click', function (e) {
-    if (e.target.closest('.drop-down') === null) {
+    if (!e.target.closest('.drop-down')) {
       closeDropdown();
     }
   });
