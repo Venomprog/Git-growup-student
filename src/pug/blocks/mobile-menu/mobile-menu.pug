@@ -4,7 +4,7 @@ mixin mobile-menu()
       +logo.mobile-menu__logo
       .mobile-menu__line
     .mobile-menu__wrapper
-      .mobile-menu__fones
+      .mobile-menu__fones.visible-mobile-768
         ul.mobile-menu__list
           li.mobile-menu__item
             a.link-element(href="tel:0800750643") 0 800 750643
@@ -12,21 +12,55 @@ mixin mobile-menu()
             a.link-element(href="tel:+380443345643") +380 44 334 56 43
           li.mobile-menu__item
             a.link-element(href="tel:+380443388643") +380 44 338 86 43
-      .mobile-menu__line
+      .drop-down.phone-select.visible-mobile-375
+        button.drop-down__button(type="button" class="mobile-menu__item")
+          span.drop-down__title 0 800 750 643
+          .drop-down__svg
+            +drop-down-arrow
+        ul.drop-down__container
+          li.drop-down__item
+            a.link-element.drop-down__link(href="tel:0800750643") 0 800 750643
+          li.drop-down__item
+            a.link-element.drop-down__link(href="tel:+380443345643") +380 44 334 56 43
+          li.drop-down__item
+            a.link-element.drop-down__link(href="tel:+380443388643") +380 44 338 86 43
+      .visible-mobile-375
+        ul.mobile-menu__list
+          li.mobile-menu__item.drop-down
+            button.drop-down__button(type="button")
+              span.drop-down__title ПРО НАС
+              .drop-down__svg
+                +drop-down-arrow
+            ul.drop-down__container
+              li.drop-down__item
+                a.link-element.drop-down__link(href="#") БЛОГ
+              li.drop-down__item
+                a.link-element.drop-down__link(href="#") ВИДЕО
+              li.drop-down__item
+                a.link-element.drop-down__link(href="#") ВОПРОСЫ
+          li.mobile-menu__item
+            a.link-element.header__menu-link(href="#") ЦЕНЫ
+          li.mobile-menu__item
+            a.link-element.header__menu-link(href="#") КОНТАКТЫ
+      .mobile-menu__line.visible-mobile-768
       .mobile-menu__buttons.mobile-menu__item
         +button("Вход")(class="button--border")
         +button("регистрация")
-      .mobile-menu__line
-      nav.mobile-menu__navigation
+      .mobile-menu__line.visible-mobile-768
+      nav.mobile-menu__navigation.visible-mobile-768
         ul.mobile-menu__list
           li.mobile-menu__item
-            a.link-element(href="#") Home
+            a.link-element(href="#") ПРО НАС
           li.mobile-menu__item
-            a.link-element(href="#") Service
+            a.link-element(href="#") БЛОГ
           li.mobile-menu__item
-            a.link-element(href="#") Top cities
+            a.link-element(href="#") ВИДЕО
           li.mobile-menu__item
-            a.link-element(href="#") Contract
+            a.link-element(href="#") ВОПРОСЫ
+          li.mobile-menu__item
+            a.link-element(href="#") ЦЕНЫ
+          li.mobile-menu__item
+            a.link-element(href="#") КОНТАКТЫ
       .mobile-menu__line
       ul.mobile-menu__lang
         li.mobile-menu__item

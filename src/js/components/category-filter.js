@@ -27,10 +27,10 @@ const categoryFilterInit = (filterWrapper) => {
       }else{
         let resultItem = document.querySelectorAll(`.${attributeName}`);
         articleItem.forEach((elem)=>{
-          elem.classList.add("article-card--hidden")
+          elem.classList.add("article-card--hidden");
         });
         resultItem.forEach((elem)=>{
-          elem.classList.remove("article-card--hidden")
+          elem.classList.remove("article-card--hidden");
         });
       }
     });

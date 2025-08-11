@@ -9,12 +9,9 @@
   &__offer{
     position: relative;
     z-index: 2;
-    max-width: 590px;
-    min-width: 220px;
     width: 40vw;
     padding-top: 150px;
     @media#{media('<',m)} {
-      width: 50vw;
       padding-top: 100px;
     }
   }
@@ -91,7 +88,7 @@
         background-image: url('images/hero1-768.jpeg');
       }
       @media#{media('<',xs)} {
-        background-image: url('images/hero1-320.jpeg');
+        background-image: url('images/hero1-375.jpeg');
       }
     }
     &--second{
@@ -103,7 +100,7 @@
         background-image: url('images/hero2-768.jpeg');
       }
       @media#{media('<',xs)} {
-        background-image: url('images/hero2-320.jpeg');
+        background-image: url('images/hero2-375.jpeg');
       }
     }
     &--third{
@@ -115,7 +112,7 @@
         background-image: url('images/hero3-768.jpeg');
       }
       @media#{media('<',xs)} {
-        background-image: url('images/hero3-320.jpeg');
+        background-image: url('images/hero3-375.jpeg');
       }
     }
   }

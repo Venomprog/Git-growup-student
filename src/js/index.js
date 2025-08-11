@@ -32,7 +32,6 @@ export const commonFunction = () => {
   selectMenu(".drop-down__filter");
   accordion();
   mobileMenu(".burger-button-768",".mobile-menu-768");
-  mobileMenu(".burger-button-320",".mobile-menu-320");
   backToTop();
   formInit();
   categoryFilterInit('.blog-category__filter');

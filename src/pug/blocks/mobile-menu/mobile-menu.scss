@@ -13,6 +13,10 @@
   animation-fill-mode: both;
   animation-name: slideInLeft;
 
+  @media#{media('<',xs)} {
+    width: 100%;
+  }
+
   &:not(.is-open) {
     backface-visibility: hidden;
     animation-duration: 0.5s;
@@ -38,23 +42,17 @@
   }
 
   &__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     height: 100%;
     padding-right: 1rem;
     padding-left: 1rem;
-    padding-top: 7rem;
+    padding-top: 6rem;
     overflow-y: auto;
+    overflow-x: hidden;
   }
 
-  &-320{
-    width: 100%;
-    height: 100%;
-    .mobile-menu__buttons{
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      margin-bottom: 30px;
-    }
-  }
   .drop-down__container{
     position: static;
   }
@@ -65,7 +63,6 @@
 
   .fone-select{
     margin-right: 0;
-    margin-bottom: 40px;
   }
 
   &__logo{
@@ -76,25 +73,22 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-bottom: 30px;
   }
 
   &__buttons{
     display: flex;
     gap: 45px;
-    margin-bottom: 30px;
+    flex-wrap: wrap;
   }
 
   &__line{
     width: 100%;
     border: 1px solid #1064E5;
-    margin-bottom: 40px;
   }
 
   &__lang{
     display: flex;
     gap: 45px;
-    margin-bottom: 30px;
   }
 }
 
@@ -156,45 +150,28 @@
   opacity: 0;
 }
 
-.visible-mobile-320{
-  display: none;
-  visibility: hidden;
-}
-
-@media screen and (max-width: 320px) {
-  .visible-mobile-320{
+.visible-mobile-375{
+  display: none!important;
+  @media#{media('<',xs)} {
     display: block!important;
-    visibility: visible;
-  }
-
-  .hidden-mobile-320{
-    display: none!important;
-    visibility: hidden;
-  }
-
-  .visible-mobile-768{
-    display: none!important;
-    visibility: hidden;
-  }
-  .header{
-    .visible-mobile {
-      display: none!important;
-      visibility: hidden;
-    }
   }
 }
 
-@media screen and (min-width: 768px) {
-  .visible-mobile {
+.visible-mobile-768{
+  @media#{media('<',xs)} {
     display: none!important;
-    visibility: hidden;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .hidden-mobile {
+.visible-mobile {
+  @media#{media('>',m)} {
     display: none!important;
-    visibility: hidden;
+  }
+}
+
+.hidden-mobile {
+  @media#{media('<',m)} {
+    display: none!important;
   }
 }
 
