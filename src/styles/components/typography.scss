@@ -14,22 +14,27 @@ h6 {
 
 .first-title {
   --base-font-family: 'IBM Plex Serif';
-  --tabletFontSize: 36px;
-  --mobileFontSize: 25px;
-  font-size: 40px;
+  // --tabletFontSize: 36px;
+  // --mobileFontSize: 25px;
+  font-size: rem(40px);
+  @media#{media('<',m)} {
+    font-size: rem(25px);
+  }
 }
 
 .second-title {
-  --tabletFontSize: 36px;
-  --mobileFontSize: 20px;
-  font-size: 40px;
+  font-size: rem(40px);
+  @media#{media('<',m)} {
+    font-size: rem(20px);
+  }
 }
 
 .third-title {
-  --tabletFontSize: 20px;
-  --mobileFontSize: 16px;
   font-family: var(--base-font-family);
-  font-size: 24px;
+  font-size: rem(24px);
+  @media#{media('<',m)} {
+    font-size: rem(16px);
+  }
 }
 
 .text-20 {
@@ -54,16 +59,4 @@ h6 {
 
 .page-title{
   margin-bottom: 25px;
-}
-
-@media screen and (max-width: 768px) {
-  .first-title, .second-title, .third-title {
-    font-size: var(--tabletFontSize);
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .first-title, .second-title, .third-title {
-    font-size: var(--mobileFontSize);
-  }
 }

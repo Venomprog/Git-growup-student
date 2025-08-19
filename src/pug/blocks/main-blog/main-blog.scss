@@ -1,10 +1,9 @@
 .main-blog {
   background-color: var(--section-bg-color);
   &__wrapper{
-    display: grid;
+    display: flex;
     justify-content: space-between;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
+    gap: 50px;
 
     .tags-list{
       margin: 0;

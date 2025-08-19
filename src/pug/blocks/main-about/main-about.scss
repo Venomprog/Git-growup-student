@@ -7,6 +7,11 @@
     gap: 60px;
   }
 
+  &__img {
+    width: rem(596px);
+    height: auto;
+  }
+
   &__wrapper{
     display: flex;
     justify-content: space-between;

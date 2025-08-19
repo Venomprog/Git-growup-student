@@ -1,7 +1,6 @@
 .hero-blog{
   &__title{
     margin-bottom: 20px;
-    width: 300px;
   }
 
   &__time{
@@ -9,25 +8,28 @@
   }
 
   &__wrapper{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    display: flex;
     justify-content: space-between;
-    justify-items: end;
+    flex-wrap: wrap;
+    // justify-items: end;
     align-items: center;
-    gap: 60px;
+    gap: 43px;
     @media#{media('<',d)} {
-      justify-items: start;
+      // justify-items: start;
     }
     @media#{media('<',m)} {
-      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+      // grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
   }
 
+  &__img{
+    width: rem(731px);
+  }
+
   &__text-block{
-    max-width: 455px;
-    @media#{media('<',d)} {
-      max-width: 100%;
-    }
+    width: rem(458px);
   }
 
   &__text{

@@ -2,12 +2,21 @@ mixin hero(mods)
   section.hero
     .hero__swiper.hero-swiper
       .swiper-wrapper
+        //- .swiper-slide
+        //-   img(src="images/hero1.jpeg" srcset="images/hero1-1200.jpeg 2x", alt="").hero-swiper__img.hero-swiper__img--first
+        //- .swiper-slide
+        //-   img(src="images/hero2.jpeg", alt="").hero-swiper__img.hero-swiper__img--second
+        //- .swiper-slide
+        //-   img(src="images/hero3.jpeg", alt="").hero-swiper__img.hero-swiper__img--third
         .swiper-slide
-          .hero-swiper__img.hero-swiper__img--first
+          .hero-swiper__img
+            img(src="images/hero1.jpeg", alt="").hero-swiper__img--first
         .swiper-slide
-          .hero-swiper__img.hero-swiper__img--second
+          .hero-swiper__img
+            img(src="images/hero2.jpeg", alt="").hero-swiper__img--second
         .swiper-slide
-          .hero-swiper__img.hero-swiper__img--third
+          .hero-swiper__img
+            img(src="images/hero3.jpeg", alt="").hero-swiper__img--third
     .container
       .hero__offer
         h1.first-title.hero__title Цифровой документооборот в три этапа:

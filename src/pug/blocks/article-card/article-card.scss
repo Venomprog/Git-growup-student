@@ -1,26 +1,25 @@
 .article-card {
   display: block;
+  // width: rem(380px);
   &--hidden{
     display: none;
   }
   &__image{
     margin-bottom: 15px;
-    max-width: 380px;
   }
 
   &__title{
-    max-width: 260px;
     margin-bottom: 10px;
   }
 
   &__text{
-    max-width: 340px;
     margin-bottom: 20px;
     line-height: 22px;
   }
 
   &__time{
     margin-bottom: 15px;
+    font-size: rem(14px);
   }
 }
 
