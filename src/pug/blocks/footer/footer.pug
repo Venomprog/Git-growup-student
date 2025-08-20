@@ -5,32 +5,31 @@ mixin footer
         +logo("footer-logo.svg")(class="footer__logo")
         ul.footer__nav.footer-nav
           li.footer-nav__item
-            a(href="#").link-element Про нас
+            a(href="about.html").link-element Про нас
             a(href="#").link-element Цены
           li.footer-nav__item
-            a(href="#").link-element Блог
-            a(href="#").link-element Контакты
+            a(href="blog.html").link-element Блог
+            a(href="contacts.html").link-element Контакты
           li.footer-nav__item
-            a(href="#").footer-nav__link Вход
-            a(href="#").footer-nav__link Регистрация
+            a(href="#").link-element Вход
+            a(href="#").link-element Регистрация
         .footer__contacts-block
           .footer__networks.footer-networks
             a(href="#").link-element infosmartsign@smarttender.biz
             a(href="#").link-element Facebook
           ul.footer__contacts.footer-contacts
             li.footer-contacts__item
-              span.footer-contacts__adress Центральная улица, 14 А Москва, 02072
+              span.footer-contacts__adress.text-14 Центральная улица, 14 А Москва, 02072
             li.footer-contacts__item
-              a(href="#").link-element 0 800 750643
+              a(href="tel:0800750643").link-element 0 800 750643
             li.footer-contacts__item
-              a(href="#").link-element +380 44 334 56 43
+              a(href="tel:+380443345643").link-element +380 44 334 56 43
             li.footer-contacts__item
-              a(href="#").link-element +380 44 338 86 43
+              a(href="tel:+380443388643").link-element +380 44 338 86 43
         .footer__arrow-up.visible-mobile
           +arrow-up-icon
-      .copyright-block
+      .copyright-block.text-12
         .copyright
           a(href="#") © 2020 Signy
-          //- .copyright-block__wrapper
         a(href="#").copyright-block__link Договор
         a(href="#").copyright-block__link Безопасность сервиса

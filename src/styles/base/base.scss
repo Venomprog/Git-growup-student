@@ -2,11 +2,17 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: rem(18px);
   font-family: var(--base-font-family);
   font-weight: var(--base-font-weight);
   color: var(--text-color);
   background: var(--site-bg-color);
+  @media#{media('<',m)} {
+    font-size: rem(16px);
+  }
+  @media#{media('<',xs)} {
+    font-size: rem(14px);
+  }
 }
 
 img{
@@ -109,6 +115,12 @@ h6 {
   font-size: 14px;
   text-decoration: none;
   cursor: pointer;
+  @media#{media('>',ll)} {
+    font-size: rem(14px);
+  }
+  @media#{media('<',t)} {
+    font-size: rem(12px);
+  }
 }
 
 .link-underline{

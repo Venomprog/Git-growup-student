@@ -21,7 +21,7 @@
     @media#{media('<',d)} {
       --button-heigth: 35px;
       --button-padding: 0 20px;
-      --button-font-size: 14px;
+      --button-font-size: 12px;
     }
   }
 
@@ -144,11 +144,11 @@
   }
 }
 
-.link-element, span{
-  @media#{media('<',d)} {
-    font-size: 12px;
-  }
-}
+// .link-element, span{
+//   @media#{media('<',d)} {
+//     font-size: 12px;
+//   }
+// }
 
 
 

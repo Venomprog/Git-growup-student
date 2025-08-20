@@ -1,5 +1,7 @@
 .logo {
   min-width: 90px;
-  max-width: 130px;
-  width: 10vw;
+  width: rem(130px);
+  @media#{media('<',lg)} {
+    width: 90px;
+  }
 }

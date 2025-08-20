@@ -10,11 +10,11 @@ mixin header
               +drop-down-arrow
           ul.drop-down__container
             li.drop-down__item
-              a(href="#").link-element.drop-down__link 0 800 750 643
+              a(href="tel:0800750643").link-element.drop-down__link 0 800 750 643
             li.drop-down__item
-              a(href="#").link-element.drop-down__link +380 44 334 56 43
+              a(href="tel:+380443345643").link-element.drop-down__link +380 44 334 56 43
             li.drop-down__item
-              a(href="#").link-element.drop-down__link +380 44 338 86 43
+              a(href="tel:+380443388643").link-element.drop-down__link +380 44 338 86 43
         nav.header__menu.hidden-mobile
           ul.header__menu-list
             li.header__menu-item.drop-down
@@ -30,9 +30,9 @@ mixin header
                 li.drop-down__item
                   a.link-element.drop-down__link(href="questions.html") ВОПРОСЫ
             li.header__menu-item
-              a.header__menu-link(href="#") ЦЕНЫ
+              a.header__menu-link.link-element(href="#") ЦЕНЫ
             li.header__menu-item
-              a.header__menu-link(href="contacts.html") КОНТАКТЫ
+              a.header__menu-link.link-element(href="contacts.html") КОНТАКТЫ
         .header__buttons
           button.button.header__button(type="button")
             span.button__body.button--border ВХОД
@@ -40,14 +40,14 @@ mixin header
             span.button__body РЕГИСТРАЦИЯ
         .drop-down.lang-select
           button.drop-down__button(type="button")
-            span.drop-down__title РУС
+            span.drop-down__title.text-14 РУС
             .drop-down__svg
               +drop-down-arrow
           ul.drop-down__container
             li.drop-down__item
-              a.drop-down__link(href="#") РУС
+              a.drop-down__link.link-element(href="#") РУС
             li.drop-down__item
-              a.drop-down__link(href="#") УКР
+              a.drop-down__link.link-element(href="#") УКР
       button.burger-button-768.burger-button.visible-mobile(type="button" title="Open menu" aria-label="Open menu" data-js-burger-button)
         <svg class="ham1" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
         <path class="top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
