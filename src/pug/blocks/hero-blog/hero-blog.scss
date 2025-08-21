@@ -8,19 +8,12 @@
   }
 
   &__wrapper{
-    // display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    // justify-items: end;
     align-items: center;
     gap: 43px;
-    @media#{media('<',d)} {
-      // justify-items: start;
-    }
-    @media#{media('<',m)} {
-      // grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    @media#{media('<',t)} {
+      flex-wrap: wrap;
     }
   }
 

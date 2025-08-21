@@ -1,9 +1,12 @@
 .main-blog {
   background-color: var(--section-bg-color);
   &__wrapper{
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
 
     .tags-list{
       margin: 0;

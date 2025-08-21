@@ -1,6 +1,6 @@
 .article-card {
   display: block;
-  // width: rem(380px);
+  animation: fadeout 2s forwards;
   &--hidden{
     display: none;
   }

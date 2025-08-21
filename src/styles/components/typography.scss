@@ -15,6 +15,9 @@ h6 {
 .first-title {
   --base-font-family: 'IBM Plex Serif';
   font-size: rem(40px);
+  @media#{media('<',d)} {
+    font-size: rem(30px);
+  }
   @media#{media('<',m)} {
     font-size: rem(25px);
   }
@@ -22,6 +25,9 @@ h6 {
 
 .second-title {
   font-size: rem(40px);
+  @media#{media('<',d)} {
+    font-size: rem(30px);
+  }
   @media#{media('<',m)} {
     font-size: rem(20px);
   }
@@ -30,6 +36,9 @@ h6 {
 .third-title {
   font-family: var(--base-font-family);
   font-size: rem(24px);
+  @media#{media('<',d)} {
+    font-size: rem(20px);
+  }
   @media#{media('<',m)} {
     font-size: rem(16px);
   }

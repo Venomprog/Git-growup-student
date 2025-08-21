@@ -5,11 +5,11 @@
     gap: 2rem;
     justify-content: space-around;
     align-items: center;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: var(--container-padding-x);
-    padding-right: var(--container-padding-x);
+    width: 100%;
+    padding: 0px rem(227px);
+    @media#{media('<',d)} {
+      padding: 0px rem(50px);
+    }
   }
 }
 

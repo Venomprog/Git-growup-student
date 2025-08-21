@@ -19,18 +19,24 @@ const categoryFilterInit = (filterWrapper) => {
         }
       });
       item.classList.add('link-active');
+      articleItem.forEach((elem, i)=>{
+        if(!elem.classList.contains('article-card--hidden')){
+          elem.classList.add("article-card--hidden");
+        }
+      });
       const attributeName = item.getAttribute('data-tag')
       if(attributeName === "all"){
         articleItem.forEach((elem) =>{
-          elem.classList.remove("article-card--hidden")
+          requestAnimationFrame(()=>{
+            elem.classList.remove("article-card--hidden")
+          })
         });
       }else{
         let resultItem = document.querySelectorAll(`.${attributeName}`);
-        articleItem.forEach((elem)=>{
-          elem.classList.add("article-card--hidden");
-        });
         resultItem.forEach((elem)=>{
-          elem.classList.remove("article-card--hidden");
+          requestAnimationFrame(()=>{
+            elem.classList.remove("article-card--hidden");
+          })
         });
       }
     });
